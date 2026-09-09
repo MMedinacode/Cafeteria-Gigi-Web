@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafetería Gigi — El completo de barrio en San Joaquín</title>
+<meta name="description" content="Cafetería Gigi, local de completos de barrio en Sebastopol 398, San Joaquín. El clásico completo grande con doble vienesa, palta, mayonesa y salsa verde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Pantalla de carga breve -->
+<div id="loader" class="loader">
+  <div class="loader-badge">🌭</div>
+</div>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#inicio" class="brand" data-tab-link="inicio">
+      <span class="brand-badge">G</span>
+      <span class="brand-name">Cafetería <em>Gigi</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <button class="nav-link active" data-tab-link="inicio">Inicio</button>
+      <button class="nav-link" data-tab-link="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab-link="carta">Carta</button>
+      <button class="nav-link" data-tab-link="resenas">Reseñas</button>
+      <button class="nav-link" data-tab-link="visitanos">Visítanos</button>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+  <!-- ================= INICIO ================= -->
+  <section class="tab-section active" id="inicio" data-tab="inicio">
+
+    <div class="hero">
+      <div class="hero-bg">
+        <!-- TEMPORAL: foto de stock (Unsplash), marcador de posición hasta que el
+             dueño deje fotos reales del local/completos en la carpeta fotos/ -->
+        <img src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?auto=format&fit=crop&w=1600&q=75" alt="Completo chileno con palta, mayonesa y tomate (foto referencial temporal)">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content reveal">
+        <span class="eyebrow">Cafetería · San Joaquín</span>
+        <h1>El completo<br>de <em>barrio</em>.</h1>
+        <p class="hero-sub">Doble vienesa, palta de verdad y la mayonesa que todos recuerdan — el clásico de Sebastopol desde siempre.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" data-tab-link="carta">Ver la carta</button>
+          <button class="btn btn-outline" data-tab-link="visitanos">Cómo llegar</button>
+        </div>
+        <div class="hero-rating">
+          <span class="stars">★★★★☆</span>
+          <strong>4.2</strong>
+          <span>(86 opiniones en Google)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="topping-bar reveal">
+      <div class="topping-item topping-tomato"><span>🍅</span><span>Tomate</span></div>
+      <div class="topping-item topping-avocado"><span>🥑</span><span>Palta</span></div>
+      <div class="topping-item topping-mayo"><span>🥄</span><span>Mayonesa</span></div>
+      <div class="topping-item topping-verde"><span>🌶️</span><span>Salsa verde</span></div>
+    </div>
+
+    <section class="section-inner">
+      <div class="highlight-grid">
+        <div class="highlight-card reveal">
+          <h3>Doble vienesa</h3>
+          <p>El detalle que más repiten sus clientes: acá el completo grande lleva dos vienesas, no una — por eso rinde y por eso se recuerda.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <h3>Precio de barrio</h3>
+          <p>Comida rápida a precio justo — según los propios clientes en Google, entre $1.000 y $5.000 por persona.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <h3>De toda la vida</h3>
+          <p>Un local pequeño y familiar en Sebastopol, San Joaquín — de esos que hasta los más chicos de la casa tienen su completo favorito.</p>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ================= NOSOTROS ================= -->
+  <section class="tab-section" id="nosotros" data-tab="nosotros">
+    <section class="section-inner narrow">
+      <span class="eyebrow">Nuestra historia</span>
+      <h2 class="reveal">El completo que se nota que le pusieron cariño</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Cafetería Gigi es un local pequeño de barrio en Sebastopol, San Joaquín, conocido por una cosa muy simple: hacer bien el completo de siempre. Nada de vueltas — vienesa, pan, y los aderezos de toda la vida, con la palta y la mayonesa como protagonistas.</p>
+          <p>El detalle que más mencionan quienes ya lo probaron es que el completo grande lleva dos vienesas en vez de una — así de simple, así de directo. Es la clase de local donde la comida rinde y el precio no sorprende para mal.</p>
+          <p>Es un espacio chico y familiar, del tipo que se gana la fidelidad del barrio reseña a reseña — incluida la de un cliente de 12 años que dejó su propia opinión en Google, con nombre y todo.</p>
+        </div>
+        <div class="about-photo reveal">
+          <!-- TEMPORAL: foto de stock, reemplazar por foto real del local -->
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=75" alt="Completo chileno clásico (foto referencial temporal)">
+        </div>
+      </div>
+
+      <div class="quote-block reveal">
+        <p>"El completo es muy grande y los aderezos también muy buenos, la mayonesa sobre todo, también la palta muy buena. Lo mejor es que ocupan 2 salchichas para hacer un completo grande."</p>
+        <span>— Roberto Jose Maturana Garrido (reseña escrita junto a su hijo, Santiago, 12 años), reseña real en Google Maps</span>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= CARTA ================= -->
+  <section class="tab-section" id="carta" data-tab="carta">
+    <section class="section-inner">
+      <span class="eyebrow">Lo de siempre</span>
+      <h2 class="reveal">Nuestra Carta</h2>
+      <p class="section-lead reveal">Cafetería Gigi no tiene todavía una carta digital publicada — esto es lo que se sabe con certeza gracias a sus propios clientes en Google. Para conocer todas las variedades y precios exactos, lo más seguro es visitar el local o llamar directo.</p>
+
+      <div class="menu-categories">
+        <div class="menu-cat reveal">
+          <h3>Completos</h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <span>Completo grande (doble vienesa, palta, mayonesa, tomate, salsa verde a elección)</span>
+              <span class="price">Consultar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-note reveal">
+        <strong>Referencia de precio por persona</strong> (dato real de una reseña en Google, no una lista de precios oficial): entre $1.000 y $5.000.
+      </div>
+
+      <p class="menu-tags-title reveal">Lo que más mencionan las reseñas de Google:</p>
+      <div class="menu-tags reveal">
+        <span>#completo (14)</span>
+        <span>#salsa verde (2)</span>
+        <span>#mayonesa (2)</span>
+        <span>#sabor (2)</span>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= RESEÑAS ================= -->
+  <section class="tab-section" id="resenas" data-tab="resenas">
+    <section class="section-inner">
+      <span class="eyebrow">Lo que dicen en Google</span>
+      <h2 class="reveal">Reseñas reales</h2>
+      <div class="rating-summary reveal">
+        <span class="rating-big">4.2</span>
+        <div>
+          <span class="stars">★★★★☆</span>
+          <p>86 opiniones en Google Maps</p>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-head">
+            <span class="review-avatar">RM</span>
+            <div>
+              <strong>Roberto Jose Maturana Garrido</strong>
+              <span>7 opiniones</span>
+            </div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p>"El lugar es muy bonito, el servicio demoró pero era por mucha demanda pero fuera de eso es bastante rápido para ser solo 2 personas y muy agradables. El completo es muy grande y los aderezos también muy buenos, la mayonesa sobre todo también la palta muy buena, lo mejor es que ocupan 2 salchichas para hacer un completo grande." <span class="review-note">— firmada junto a su hijo: "Santiago Maturana, 12 años"</span></p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-head">
+            <span class="review-avatar">YO</span>
+            <div>
+              <strong>Yolanda Oñate</strong>
+              <span>Local Guide · 73 opiniones</span>
+            </div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p>"Excelente, lugar muy buena atención excelente su comida, todo muy limpio, lo recomiendo al 1000%."</p>
+        </div>
+      </div>
+
+      <div class="review-cta reveal">
+        <p>¿Ya nos visitaste?</p>
+        <a class="btn btn-primary" href="https://search.google.com/local/writereview?placeid=0x9662da9a9315c1dd:0x358559f882fbb96d" target="_blank" rel="noopener">Escribe tu reseña en Google</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= VISÍTANOS ================= -->
+  <section class="tab-section" id="visitanos" data-tab="visitanos">
+    <section class="section-inner">
+      <span class="eyebrow">Encuéntranos</span>
+      <h2 class="reveal">Visítanos</h2>
+
+      <div class="visit-grid">
+        <div class="visit-info reveal">
+
+          <div class="info-block">
+            <h4>Dirección</h4>
+            <p>Sebastopol 398, San Joaquín</p>
+          </div>
+
+          <div class="info-block">
+            <h4>Horario</h4>
+            <!-- Google Maps (listado sin reclamar por el dueño) solo expone que abre a las
+                 17:00 — no publica el horario completo de la semana ni la hora de cierre.
+                 No se inventa el resto: falta confirmar horario completo y días de cierre. -->
+            <p class="hours-known">Abre a las 17:00 hrs</p>
+            <p class="hours-missing">El horario completo de la semana (y la hora de cierre) todavía no está publicado en Google Maps — falta confirmar directo con el local.</p>
+          </div>
+
+          <div class="info-block">
+            <h4>Contacto</h4>
+            <!-- Teléfono real de Google Maps — es un fijo, no se confirmó como WhatsApp,
+                 así que se usa tel: en vez de wa.me (mismo criterio de honestidad que
+                 Café Del Mundo / Mukmu Coffee). Sin Instagram/TikTok encontrados. -->
+            <p>Teléfono fijo — no confirmado como WhatsApp. Sin Instagram ni redes sociales encontradas todavía.</p>
+            <a class="btn btn-outline" href="tel:+56225255086">Llamar al (2) 2525 5086</a>
+          </div>
+
+          <div class="route-buttons">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Sebastopol+398,San+Joaquin&destination_place_id=0x9662da9a9315c1dd:0x358559f882fbb96d" target="_blank" rel="noopener">Cómo llegar (Maps)</a>
+            <a class="btn btn-outline" href="https://waze.com/ul?q=Sebastopol%20398%2C%20San%20Joaqu%C3%ADn&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+          </div>
+        </div>
+
+        <div class="visit-map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.4143449685707!2d-70.6322121!3d-33.5166113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662da9a9315c1dd%3A0x358559f882fbb96d!2sCafeter%C3%ADa%20Gigi!5e0!3m2!1ses-419!2scl!4v1788925202927!5m2!1ses-419!2scl"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Ubicación de Cafetería Gigi en Google Maps"></iframe>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="brand footer-brand">
+      <span class="brand-badge">G</span>
+      <span class="brand-name">Cafetería <em>Gigi</em></span>
+    </div>
+    <p>Sebastopol 398, San Joaquín · El completo de barrio</p>
+    <p class="footer-credit">Demo diseñada por <a href="#" target="_blank" rel="noopener">Matías Medina</a></p>
+  </div>
+</footer>
+
+<!-- Widget flotante: solo llamada telefónica, único canal de contacto real confirmado
+     (sin Instagram/WhatsApp/delivery para este local) -->
+<div class="floating-widget">
+  <a class="fab fab-call" href="tel:+56225255086" aria-label="Llamar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
